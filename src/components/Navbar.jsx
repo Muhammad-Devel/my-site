@@ -7,7 +7,7 @@ function Navbar() {
     <div className="fixed w-full max-w-11/12 top-7 flex justify-between items-center z-50">
       <div
         className="container mx-auto flex items-center space-x-4 max-w-7xl w-full justify-between bg-white/10 backdrop-blur-md rounded-full border border-white/20 
-                      shadow-xl px-10 py-4"
+                      shadow-xl px-6 md:px-10 py-2 md:py-4"
       >
         <div className="text-md md:text-3xl text-gray-700 font-bold dark:text-gray-200 ml-2">
           Mukhammad J.A
