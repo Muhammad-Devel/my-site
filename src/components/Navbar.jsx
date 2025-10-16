@@ -66,7 +66,7 @@ function Navbar() {
           </div>
           {/* Add a button for the contact section */}
           {isOpen && (
-            <ul className="md:hidden absolute w-[200px] bg-white/50 backdrop-blur-md text-gray-700 text-lg space-y-2 rounded-2xl border border-white/50 shadow-xl top-20 right-0 p-8 dark:bg-gray-800/80 dark:border-gray-700 dark:shadow-lg dark:backdrop-blur-lg dark:text-gray-200">
+            <ul className="md:hidden absolute w-[200px] bg-white/80 backdrop-blur-md text-gray-700 text-lg space-y-2 rounded-2xl border border-white/50 shadow-xl top-20 right-0 p-8 dark:bg-gray-800/80 dark:border-gray-700 dark:shadow-lg dark:backdrop-blur-lg dark:text-gray-200">
               <li className="transition duration-300 ease-in-out">
                 <a href="/" className="hover:text-gray-400">
                   Home
