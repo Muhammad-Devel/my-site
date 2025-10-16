@@ -9,7 +9,7 @@ function Navbar() {
         className="container mx-auto flex items-center space-x-4 max-w-7xl w-full justify-between bg-white/10 backdrop-blur-md rounded-full border border-white/20 
                       shadow-xl px-10 py-4"
       >
-        <div className="text-3xl text-gray-700 font-bold dark:text-gray-200 ml-2">
+        <div className="text-lg md:text-3xl text-gray-700 font-bold dark:text-gray-200 ml-2">
           Mukhammad J.A
         </div>
         <div className="flex items-center space-x-4">
