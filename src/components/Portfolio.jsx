@@ -42,7 +42,7 @@ const projects = [
 
 function Portfolio() {
   return (
-    <div className="bg-gray-100 text-gray-800 py-12">
+    <div id="portfolio" className="bg-gray-100 text-gray-800 py-12">
       <div className="container mx-auto text-center w-full max-w-6xl flex flex-col justify-between">
         <h1 className="text-3xl font-bold">My Work's</h1>
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 mt-10">

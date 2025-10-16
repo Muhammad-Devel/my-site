@@ -27,13 +27,13 @@ function Navbar() {
               </a>
             </li>
             <li className="transition duration-300 ease-in-out nav-link">
-              <a href="#services" className="hover:text-gray-400">
-                Services
+              <a href="#projects" className="hover:text-gray-400">
+                Projects
               </a>
             </li>
             <li className="transition duration-300 ease-in-out nav-link">
-              <a href="#portfolio" className="hover:text-gray-400">
-                Portfolio
+              <a href="#contact" className="hover:text-gray-400">
+                Contact
               </a>
             </li>
           </ul>
@@ -78,13 +78,13 @@ function Navbar() {
                 </a>
               </li>
               <li className="transition duration-300 ease-in-out nav-mobile-link">
-                <a href="#services" className="hover:text-gray-400">
-                  Services
+                <a href="#projects" className="hover:text-gray-400">
+                  Projects
                 </a>
               </li>
               <li className="transition duration-300 ease-in-out nav-mobile-link">
-                <a href="#portfolio" className="hover:text-gray-400">
-                  Portfolio
+                <a href="#contact" className="hover:text-gray-400">
+                  Contact
                 </a>
               </li>
             </ul>
