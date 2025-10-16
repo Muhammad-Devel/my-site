@@ -1,111 +1,80 @@
-import React from "react";
+import { Icon } from "@iconify/react";
+import { ArrowDown } from "lucide-react";
 
 function Hero() {
   return (
-    <div className="bg-gradient-to-t from-gray-300 to-netrual-500 h-screen flex items-center justify-center text-white relative shadow-lg">
-      <div className="container mx-auto text-center w-full max-w-6xl flex justify-between md:flex-row ">
-        <div className="flex flex-col justify-center items-start space-y-4">
-          <h1 className="font-bold text-6xl text-gray-900">
-            Hi, I'm Mukhammad
-          </h1>
-          <h3 className="font-semibold text-4xl text-gray-700">
-            MERN Stack Developer
-            <span className="flex items-center space-x-4 mt-2 w-full justify-center border-b-2 border-gray-500 pb-2">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                alt="MongoDB"
-                className="w-8 h-8"
-              />
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
-                alt="Express"
-                className="w-8 h-8 bg-white rounded p-1"
-              />
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt="React"
-                className="w-8 h-8"
-              />
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-                alt="Node.js"
-                className="w-8 h-8"
-              />
-            </span>
-          </h3>
-          <p className="text-lg text-gray-600 max-w-md text-left">
-            I create web applications using the MERN stack. Let's build
-            something amazing together!
-          </p>
-          <div className="flex space-x-4 mt-6">
+    <section
+        id="hero"
+        className="relative flex flex-col items-center justify-center text-center h-[90vh] w-full px-6 mt-16"
+      >
+        {/* Glass overlay effect */}
+        <div className="absolute inset-0 bg-white/10 dark:bg-black/40 backdrop-blur-md"></div>
+
+        {/* Hero content */}
+        <div className="relative z-10 space-y-6">
+           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-gray-900 dark:text-white">
+          Hi, I’m <span className="text-green-600 dark:text-green-400">Mukhammadjon</span>
+        </h1>
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
+          I’m a <span className="font-semibold text-green-600 dark:text-green-400">Full-Stack Developer</span> —  
+          passionate about building fast, responsive, and scalable web applications  
+          using <span className="font-medium">React</span>, <span className="font-medium">Tailwind CSS</span>,  
+          <span className="font-medium"> Node.js</span> & <span className="font-medium">Express</span>.
+        </p>
+
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8">
+          <a
+            href="#projects"
+            className="px-6 py-3 bg-green-500 text-white font-medium rounded-xl 
+                       hover:bg-green-600 transition-all shadow-md"
+          >
+            View My Projects
+          </a>
+          <a
+            href="#contact"
+            className="px-6 py-3 border border-green-500 text-green-600 dark:text-green-400 
+                       rounded-xl hover:bg-green-500 hover:text-white 
+                       transition-all shadow-sm"
+          >
+            Contact Me
+          </a>
+          </div>
+
+          {/* Social Icons */}
+          <div className="flex justify-center gap-6 mt-8">
             <a
-              href="#portfolio"
-              className=" flex items-center px-6 py-3 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-800 hover:text-gray-300 transition duration-300"
+              href="https://github.com/username"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-110 transition-transform"
             >
-              View Portfolio
-              <span className="ml-2">→</span>
+              <Icon icon="mdi:github" className="text-3xl text-gray-700 dark:text-gray-200" />
             </a>
             <a
-              href="#contact"
-              className="flex flex-row items-center px-6 py-3 bg-gray-400 text-gray-700 rounded-lg shadow hover:bg-gray-600 hover:text-white transition duration-300"
+              href="https://linkedin.com/in/username"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-110 transition-transform"
             >
-              Contact Me
-              <span className="ml-2">
-                <svg
-                  className="w-8 h-8"
-                  fill="currentColor"
-                  viewBox="0 0 36 32"
-                >
-                  <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zm16 2.236l-7.071 7.071a1 1 0 01-1.414 0L4 6.236V20h16V6.236z" />
-                </svg>
-              </span>
+              <Icon icon="mdi:linkedin" className="text-3xl text-blue-600" />
+            </a>
+            <a
+              href="mailto:jumaboyev2104@gmail.com"
+              className="hover:scale-110 transition-transform"
+            >
+              <Icon icon="mdi:email" className="text-3xl text-red-500" />
             </a>
           </div>
         </div>
-        <div>
-          <img
-            src="https://avatars.githubusercontent.com/u/113626688?v=4"
-            alt="Mukhammad J.A"
-            className="rounded-full w-48 h-48 mx-auto mt-8"
-          />
+
+         <div className="flex justify-center mt-10 animate-bounce">
+          <ArrowDown className="text-green-600 dark:text-green-400" size={28} />
         </div>
-        <div className=""></div>
-      </div>
-      {/* Social Media Icons */}
-      <div className="fixed right-8 bottom-8 flex flex-col space-y-4 z-50">
-        <a
-          href="https://github.com/mukhammadjon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-            alt="GitHub"
-            className="w-8 h-8 hover:scale-110 transition-transform"
-          />
-        </a>
-        <a
-          href="https://linkedin.com/in/mukhammadjon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-            alt="LinkedIn"
-            className="w-8 h-8 hover:scale-110 transition-transform"
-          />
-        </a>
-        <a href="mailto:mukhammadjon@example.com">
-          <svg
-            className="w-8 h-8 text-gray-700 hover:scale-110 transition-transform"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4zm2 0v.01L12 13 20 4.01V4H4zm16 2.236l-7.071 7.071a1 1 0 01-1.414 0L4 6.236V20h16V6.236z" />
-          </svg>
-        </a>
-      </div>
-    </div>
+
+        {/* Background accent shapes */}
+        <div className="absolute top-10 left-10 w-32 h-32 bg-green-400/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-green-600/20 rounded-full blur-3xl animate-pulse"></div>
+      </section>
   );
 }
 
