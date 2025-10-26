@@ -32,7 +32,7 @@ export default function ProjectsSection() {
       title: "Portfolio Website",
       desc: "Personal portfolio with glassmorphism and dark mode.",
       category: "Frontend",
-      demo: "https://https://muhammadjon-dev.vercel.app/",
+      demo: "https://muhammadjon-dev.vercel.app/",
       github: "https://github.com/Muhammad-Devel/my-site/",
       image:
         "https://cdn.dribbble.com/users/2400293/screenshots/17248047/media/aa468cddf8302a7c9b50a64e530b1c45.png",
