@@ -26,7 +26,7 @@ export default function ProjectsSection() {
       demo: "https://admin-dashboard-mukhammadjon.vercel.app/",
       github: "https://github.com/Muhammad-Devel/admin-dashboard",
       image:
-        "https://raw.githubusercontent.com/Muhammad-Devel/my-site/src/assets/screens/admin-dashboard-screen.png",
+        "./screens/admin-dashboard-screen.png",
     },
     {
       title: "Portfolio Website",
@@ -35,7 +35,7 @@ export default function ProjectsSection() {
       demo: "https://muhammadjon-dev.vercel.app/",
       github: "https://github.com/Muhammad-Devel/my-site/",
       image:
-        "https://raw.githubusercontent.com/Muhammad-Devel/my-site/src/assets/screens/my-site-screen.png",
+        "./screens/my-site-screen.png",
     },
 
     // 🔹 HTML / CSS / JS
