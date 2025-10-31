@@ -25,8 +25,7 @@ export default function ProjectsSection() {
       category: "Frontend",
       demo: "https://admin-dashboard-mukhammadjon.vercel.app/",
       github: "https://github.com/Muhammad-Devel/admin-dashboard",
-      image:
-        "./screens/admin-dashboard-screen.png",
+      image: "./screens/admin-dashboard-screen.png",
     },
     {
       title: "Portfolio Website",
@@ -34,8 +33,7 @@ export default function ProjectsSection() {
       category: "Frontend",
       demo: "https://muhammadjon-dev.vercel.app/",
       github: "https://github.com/Muhammad-Devel/my-site/",
-      image:
-        "./screens/my-site-screen.png",
+      image: "./screens/my-site-screen.png",
     },
 
     // 🔹 HTML / CSS / JS
@@ -43,10 +41,9 @@ export default function ProjectsSection() {
       title: "Pomodoro Timer",
       desc: "A simple and effective timer built using HTML, CSS, and JS.",
       category: "HTML/CSS/JS",
-      demo: "https://pomodoro-timer.vercel.app",
-      github: "https://github.com/muhammadjon/pomodoro-timer",
-      image:
-        "https://cdn.dribbble.com/users/1554526/screenshots/15065312/media/3b8c038c6e9b88de67b62e6637ed2a59.png",
+      demo: "https://muhammad-devel.github.io/pomodoro-timer/",
+      github: "https://github.com/muhammad-devel/pomodoro-timer",
+      image: "./screens/pomodoro-screen.png",
     },
     {
       title: "2048 Game Clone",
@@ -150,7 +147,9 @@ export default function ProjectsSection() {
       </div>
 
       {/* MODAL */}
-      {openModal && <Modal url={getUrl} isOpen={openModal} onClose={closeHandler} />}
+      {openModal && (
+        <Modal url={getUrl} isOpen={openModal} onClose={closeHandler} />
+      )}
     </section>
   );
 }
