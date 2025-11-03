@@ -1,4 +1,5 @@
-import { Mail, Send } from "lucide-react";
+import { Github, Mail, Send } from "lucide-react";
+import { SiTelegram, SiGithub } from "react-icons/si";
 import { useState } from "react";
 
 export default function ContactSection() {
@@ -84,13 +85,28 @@ export default function ContactSection() {
           </button>
         </form>
 
-        <div className="flex justify-center mt-10 space-x-4">
+        <div className="flex flex-col items-center justify-center mt-10 space-y-2">
+          
+          <a
+            href="https://t.me/Muhammadjon_JA"
+            className="flex items-center gap-2 text-green-600 dark:text-green-400 
+                       hover:underline"
+          >
+             <SiTelegram size={18} />Muhammad J.A
+          </a>
+          <a
+            href="https://github.com/Muhammad-Devel"
+            className="flex items-center gap-2 text-green-600 dark:text-green-400 
+                       hover:underline"
+          >
+            <SiGithub size={18} />Muhammad-Devel
+          </a>
           <a
             href="mailto:jumaboyev2104@gmail.com"
             className="flex items-center gap-2 text-green-600 dark:text-green-400 
                        hover:underline"
           >
-            <Mail size={18} /> jumaboyev2104@gmail.com
+            <Mail size={18} />jumaboyev2104@gmail.com
           </a>
         </div>
       </div>

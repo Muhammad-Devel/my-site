@@ -23,6 +23,7 @@ export default function ProjectsSection() {
       title: "Modern Dashboard UI",
       desc: "Admin dashboard built with React and Tailwind CSS.",
       category: "Frontend",
+      tech: ["React", "CSS"],
       demo: "https://admin-dashboard-mukhammadjon.vercel.app/",
       github: "https://github.com/Muhammad-Devel/admin-dashboard",
       image: "./screens/admin-dashboard-screen.png",
@@ -31,6 +32,7 @@ export default function ProjectsSection() {
       title: "Portfolio Website",
       desc: "Personal portfolio with glassmorphism and dark mode.",
       category: "Frontend",
+      tech: ["React", "TailwindCSS"],
       demo: "https://muhammadjon-dev.vercel.app/",
       github: "https://github.com/Muhammad-Devel/my-site/",
       image: "./screens/my-site-screen.png",
@@ -41,6 +43,7 @@ export default function ProjectsSection() {
       title: "Pomodoro Timer",
       desc: "A simple and effective timer built using HTML, CSS, and JS.",
       category: "HTML/CSS/JS",
+      tech: ["HTML", "CSS", "JavaScript"],
       demo: "https://muhammad-devel.github.io/pomodoro-timer/",
       github: "https://github.com/muhammad-devel/pomodoro-timer",
       image: "./screens/pomodoro-screen.png",
@@ -49,6 +52,7 @@ export default function ProjectsSection() {
       title: "2048 Game Clone",
       desc: "The popular 2048 game recreated in pure JavaScript.",
       category: "HTML/CSS/JS",
+      tech:[],
       demo: "https://2048-clone.vercel.app",
       github: "https://github.com/muhammadjon/2048-game",
       image:
@@ -60,6 +64,7 @@ export default function ProjectsSection() {
       title: "REST API for Expense Tracker",
       desc: "Node.js + Express + MongoDB API for managing expenses securely.",
       category: "Backend",
+      tech:[],
       demo: "https://expense-api-demo.vercel.app",
       github: "https://github.com/muhammadjon/expense-tracker-api",
       image:
@@ -69,6 +74,7 @@ export default function ProjectsSection() {
       title: "Auth System",
       desc: "User registration, login, JWT authentication system built with Node.js.",
       category: "Backend",
+      tech:[],
       demo: "https://auth-system-demo.vercel.app",
       github: "https://github.com/muhammadjon/auth-system",
       image:
@@ -125,6 +131,16 @@ export default function ProjectsSection() {
               <p className="text-gray-600 dark:text-gray-400 text-sm">
                 {proj.desc}
               </p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {proj.tech.map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs border-2 text-gray-500 dark:text-gray-200 dark:bg-gray-800 dark: border-gray-500 px-2 py-1 rounded-full"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
               <div className="flex gap-3 mt-4">
                 <button
                   onClick={() => clickHandler(proj.demo)}
