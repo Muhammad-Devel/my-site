@@ -61,14 +61,14 @@ export default function ProjectsSection() {
 
     // 🔹 Backend
     {
-      title: "REST API for Expense Tracker",
-      desc: "Node.js + Express + MongoDB API for managing expenses securely.",
+      title: "Expense Tracker",
+      desc: "React.js + Node.js + Express + MongoDB API for managing expenses securely.",
       category: "Backend",
-      tech:[],
-      demo: "https://expense-api-demo.vercel.app",
-      github: "https://github.com/muhammadjon/expense-tracker-api",
+      tech:["React", "Node.js", "Express", "MongoDB","Rechart"],
+      demo: "https://https://expense-trakerv2.vercel.app/",
+      github: "https://github.com/Muhammad-Devel/expense-trakerv2",
       image:
-        "https://cdn.dribbble.com/users/32512/screenshots/15631333/media/5e9b78f59f621a5e7f12192b28df03d7.png",
+        "./screens/exp-screen.png",
     },
     {
       title: "Auth System",
