@@ -80,9 +80,20 @@ export default function ProjectsSection() {
       image:
         "https://cdn.dribbble.com/users/1059583/screenshots/16175152/media/332ce15f93b8b1da7b41e7ef6bb0de83.png",
     },
+    // Algorithms
+    {
+      title: "JS Algorithms Tracker",
+      desc: "",
+      category: "Algorithms",
+      tech:[],
+      demo: "https://js-algorithms-tracker.github.io",
+      github: "https://github.com/Muhammad-Devel/js-algorithms-tracker  ",
+      image:
+        "https://cdn.dribbble.com/users/1059583/screenshots/16175152/media/332ce15f93b8b1da7b41e7ef6bb0de83.png",
+    },
   ];
 
-  const categories = ["All", "Frontend", "HTML/CSS/JS", "Backend"];
+  const categories = ["All", "Frontend", "Backend", "HTML/CSS/JS", "Algorithms"];
   const filteredProjects =
     activeCategory === "All"
       ? projects
