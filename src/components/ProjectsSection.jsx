@@ -86,7 +86,7 @@ export default function ProjectsSection() {
       desc: "",
       category: "Algorithms",
       tech:[],
-      demo: "https://js-algorithms-tracker.github.io",
+      demo: "https://js-algorithms-tracker.vercel.app/",
       github: "https://github.com/Muhammad-Devel/js-algorithms-tracker  ",
       image:
         "https://cdn.dribbble.com/users/1059583/screenshots/16175152/media/332ce15f93b8b1da7b41e7ef6bb0de83.png",
