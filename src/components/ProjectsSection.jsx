@@ -37,6 +37,16 @@ export default function ProjectsSection() {
       github: "https://github.com/Muhammad-Devel/my-site/",
       image: "./screens/my-site-screen.png",
     },
+// 🔹 Full-Stack
+    {
+      title: "Bot + Admin Panel",
+      desc: "🤖 Bot + Admin Panel",
+      category: "Full-stack",
+      tech: ["React", "Node.js", "Express", "Telegraf", "JWT"],
+      demo: "https://bot-admin-project.vercel.app/",
+      github: "https://github.com/Muhammad-Devel/bot-admin-project/",
+      image: "./screens/dashboard-screen.png",
+    },
 
     // 🔹 HTML / CSS / JS
     {
