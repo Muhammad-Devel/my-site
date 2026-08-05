@@ -103,7 +103,7 @@ export default function ProjectsSection() {
     },
   ];
 
-  const categories = ["All", "Frontend", "Backend", "HTML/CSS/JS", "Algorithms"];
+  const categories = ["All", "Frontend", "Backend", "Full-Stack", "HTML/CSS/JS", "Algorithms"];
   const filteredProjects =
     activeCategory === "All"
       ? projects
