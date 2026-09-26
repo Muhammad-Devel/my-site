@@ -30,6 +30,8 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={handleDarkMode}
+      type="button"
+      aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
       className="text-lg font-medium transition-colors duration-300 mr-5"
     >
       {dark ? <Icon icon="ix:moon-filled" width="24" height="24" className="-rotate-45 text-gray-200 hover:text-gray-500" /> : <Icon icon="ix:sun-filled" width="24" height="24" className="text-gray-700 hover:text-gray-400" />}

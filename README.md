@@ -1,12 +1,78 @@
-# React + Vite
+# Muhammad J.A — Full-Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for **Mukhammadjon Jumaboyev (Muhammad J.A)**. The site presents my skills, selected projects, contact details, and experience building modern web applications.
 
-Currently, two official plugins are available:
+## Highlights
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive portfolio layout for mobile, tablet, and desktop
+- English, Uzbek, and Russian language support
+- Light and dark theme with saved preference
+- Project filtering by category
+- Project demo and source-code links
+- Accessible navigation, form controls, and social links
+- SEO and Open Graph metadata
+- React and Vite production build
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Vite
+- Tailwind CSS 4
+- Lucide React
+- Iconify
+- React Icons
+
+## Getting started
+
+### Requirements
+
+- Node.js 18 or newer
+- npm 9 or newer
+
+### Installation
+
+```bash
+git clone https://github.com/Muhammad-Devel/my-site.git
+cd my-site
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open the local URL printed by Vite, usually `http://localhost:5173`.
+
+### Production build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Project structure
+
+```text
+src/
+├── components/       # Page sections and reusable UI components
+├── shared/           # Shared application logic, including translations
+├── App.jsx           # Main page composition
+├── index.css         # Global styles
+└── main.jsx          # React entry point
+```
+
+## Localization
+
+Translations are managed in [`src/shared/i18n.jsx`](./src/shared/i18n.jsx). To add or update copy, edit the `en`, `uz`, and `ru` translation objects.
+
+## Contact
+
+- GitHub: [Muhammad-Devel](https://github.com/Muhammad-Devel)
+- Telegram: [@Muhammadjon_JA](https://t.me/Muhammadjon_JA)
+- Email: [jumaboyev2104@gmail.com](mailto:jumaboyev2104@gmail.com)
+
+## License
+
+This project is a personal portfolio. You may use it as inspiration, but please replace personal information, project links, and assets before publishing your own version.

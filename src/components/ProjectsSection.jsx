@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { useLanguage } from "../shared/i18n";
 import Modal from "../shared/ui/Modal";
 
 export default function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [openModal, setOpenModal] = useState(false);
   const [getUrl, setGetUrl] = useState("");
+  const { t } = useLanguage();
 
   const clickHandler = (url) => {
     setGetUrl(url);
@@ -75,7 +77,7 @@ export default function ProjectsSection() {
       desc: "React.js + Node.js + Express + MongoDB API for managing expenses securely.",
       category: "Backend",
       tech:["React", "Node.js", "Express", "MongoDB","Rechart"],
-      demo: "https://https://expense-trakerv2.vercel.app/",
+      demo: "https://expense-trakerv2.vercel.app/",
       github: "https://github.com/Muhammad-Devel/expense-trakerv2",
       image:
         "./screens/exp-screen.png",
@@ -103,7 +105,14 @@ export default function ProjectsSection() {
     },
   ];
 
-  const categories = ["All", "Frontend", "Backend", "Full-Stack", "HTML/CSS/JS", "Algorithms"];
+  const categories = [
+    ["All", t.projects.all],
+    ["Frontend", t.projects.frontend],
+    ["Backend", t.projects.backend],
+    ["Full-stack", t.projects.fullstack],
+    ["HTML/CSS/JS", t.projects.html],
+    ["Algorithms", t.projects.algorithms],
+  ];
   const filteredProjects =
     activeCategory === "All"
       ? projects
@@ -112,23 +121,23 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-6">
-        My Projects
+        {t.projects.title}
       </h2>
 
       {/* CATEGORY FILTER BUTTONS */}
       <div className="flex justify-center gap-4 mb-10 flex-wrap">
-        {categories.map((cat) => (
+        {categories.map(([value, label]) => (
           <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
+            key={value}
+            onClick={() => setActiveCategory(value)}
             className={`px-5 py-2 rounded-full text-sm font-medium border transition-all duration-300 
               ${
-                activeCategory === cat
+                activeCategory === value
                   ? "bg-green-500 text-white border-green-500"
                   : "bg-white/20 dark:bg-gray-800/40 border-white/20 dark:border-gray-700/30 text-gray-700 dark:text-gray-300 hover:bg-green-500 hover:text-white"
               }`}
           >
-            {cat}
+            {label}
           </button>
         ))}
       </div>
@@ -167,7 +176,7 @@ export default function ProjectsSection() {
                   onClick={() => clickHandler(proj.demo)}
                   className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm bg-green-500/80 text-white hover:bg-green-600 transition"
                 >
-                  <Icon icon="mdi:eye" className="text-lg" /> Demo
+                  <Icon icon="mdi:eye" className="text-lg" /> {t.projects.demo}
                 </button>
                 <a
                   href={proj.github}
@@ -175,7 +184,7 @@ export default function ProjectsSection() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-3 py-2 rounded-lg text-sm bg-gray-700/80 text-white hover:bg-gray-800 transition"
                 >
-                  <Icon icon="mdi:github" className="text-lg" /> Code
+                  <Icon icon="mdi:github" className="text-lg" /> {t.projects.code}
                 </a>
               </div>
             </div>
